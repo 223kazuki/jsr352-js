@@ -19,6 +19,7 @@ var Collections = require('diagram-js/lib/util/Collections');
  */
 function JSR352Updater(eventBus, bpmnjs, elementFactory, bpmnFactory) {
   function createChildShape(type, parent, offset) {
+    console.log('koko#####');
     if (!offset) {
       offset = {x: 0, y: 0};
     }

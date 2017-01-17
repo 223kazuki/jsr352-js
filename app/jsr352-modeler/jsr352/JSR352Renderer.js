@@ -79,6 +79,7 @@ function JSR352Renderer(eventBus, styles, bpmnRenderer) {
     });
     svgAttr(rect, attrs);
 
+
     svgAppend(parentGfx, rect);
 
     return rect;
@@ -144,6 +145,7 @@ JSR352Renderer.prototype.canRender = function(element) {
 
 JSR352Renderer.prototype.drawShape = function(p, element) {
   var type = element.type;
+  console.log(type);
   if (is(element, 'jsr352:Step')) {
     var step = this.drawRect(p, element.width, element.height, 10, 0);
     this.drawRect(p, 40,20, 0, 0);
